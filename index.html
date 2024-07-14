@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false;" onselectstart="return false;" ondragstart="return false;">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator by Me</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="container calculator">
+            <table border="1">
+                <tr>
+                    <th class="cal_name" colspan="5"> Casio Calculator</th>
+                </tr>
+                <tr>
+                    <td colspan="5" class="display"><input type="text" id="output" placeholder="0"
+                            onkeypress="return isNumberKey(event)"> </td>
+                </tr>
+                <tr>
+                    <td class="button" onclick="insert(7)">7</td>
+                    <td class="button" onclick="insert(8)">8</td>
+                    <td class="button" onclick="insert(9)">9</td>
+                    <td class="button active" onclick="delet()">DEL</td>
+                    <td class="button active" onclick="suraj()">AC</td>
+                </tr>
+                <tr>
+                    <td class="button" onclick="insert(4)">4</td>
+                    <td class="button" onclick="insert(5)">5</td>
+                    <td class="button" onclick="insert(6)">6</td>
+                    <td class="button" onclick="insert('*')">x</td>
+                    <td class="button" onclick="insert('/')"> / </td>
+                </tr>
+                <tr>
+                    <td class="button" onclick="insert(1)">1</td>
+                    <td class="button" onclick="insert(2)">2</td>
+                    <td class="button" onclick="insert(3)">3</td>
+                    <td class="button" onclick="insert('+')">+</td>
+                    <td class="button" onclick="insert('-')">-</td>
+                </tr>
+                <tr>
+                    <td class="button" onclick="insert(0)">0</td>
+                    <td class="button" onclick="insert('.')">.</td>
+                    <td class="button" onclick="insert('>')">></td>
+                    <td class="button" onclick="insert('<')"><</td>
+                    <td class="button" onclick="total()">=</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="history">
+            <h2>Recent Calculations</h2>
+            <ul id="historyList">
+            </ul>
+            <button onclick="clearHistory()">Clear History</button>
+        </div>
+    </div>
+
+    <script src="assets/functionalities.js"></script>
+</body>
+
+</html>
