@@ -16,8 +16,9 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
-.display{
-    border:1px ;
+
+.display {
+    border: 1px;
     border-radius: 8px;
 }
 
@@ -52,6 +53,7 @@ body {
     height: 100%;
     display: flex;
     text-align: center;
+    width: 420px;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -100,13 +102,13 @@ body {
 }
 
 .cal_name {
-    border: 2px ;
+    border: 2px;
     border-radius: 18px 18px 0px 0px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    
+
 }
 
 .button {

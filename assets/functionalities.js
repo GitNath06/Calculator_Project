@@ -45,6 +45,15 @@ function isNumberKey(evt) {
     }
     return false;
 }
+result.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        total();
+    } else if (event.key === "Backspace") {
+        result.value = "0";
+        event.preventDefault();  // Prevent the default backspace behavior
+    }
+});
+
 
 window.onload = function () {
     result.focus();
